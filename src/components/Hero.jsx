@@ -61,7 +61,7 @@ export default function Hero({ onContactOpen }){
           </div>
 
           {/* Cycle indicators */}
-          <div className="flex gap-2 mt-8 mb-6">
+          <div className="flex gap-2 mt-8 mb-6 ">
             {featuresSentences.map((_, idx) => (
               <motion.button
                 key={idx}
