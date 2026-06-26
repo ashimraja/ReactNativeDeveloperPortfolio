@@ -2,6 +2,150 @@ import { images } from "../src/assets";
 
 export const projects = [
   {
+    id: "veliyx",
+    title: "Veliyx & Veliyx Driver",
+    role: "Product UI Engineer",
+    description:
+      "Ride booking, parcel delivery, and food ordering apps with live GPS tracking, real-time driver updates, and seamless booking flows for both users and drivers.",
+    tags: ["React Native", "TypeScript", "Maps", "Socket.io", "Redux Toolkit"],
+    demo: { store: "", web: "", available: true },
+    coverColor: "bg-gradient-to-br from-cyan-500 via-sky-600 to-indigo-700",
+    highlights: [
+      "Designed and built the complete UI for two production apps from scratch",
+      "Integrated Google Maps with real-time socket-based driver location updates",
+      "Implemented ride, parcel, and food booking flows with address auto-fill and map tap selection",
+      "Added background GPS tracking for Android using foreground services",
+    ],
+    features: [
+      "Live GPS tracking with animated marker movement and color-coded route polylines",
+      "Fresh booking and active-trip resume flows with real-time screen updates",
+      "Stripe payments, TanStack Query, and Redux Toolkit integration",
+      "Real-time ride room communication with socket-based updates",
+    ],
+    challenges: [
+      {
+        problem:
+          "Keeping driver and rider experiences synchronized during live trips with continuous location updates",
+        solution:
+          "Built real-time socket-driven state updates and animated map transitions to keep both sides in sync",
+      },
+      {
+        problem:
+          "Maintaining accurate GPS tracking while the driver app runs in the background on Android",
+        solution:
+          "Implemented foreground services to ensure location emissions continue reliably in the background",
+      },
+    ],
+    impact: [
+      { value: "2 Apps", label: "User & Driver Experience" },
+      { value: "Live", label: "GPS Tracking" },
+      { value: "Real-time", label: "Ride Updates" },
+    ],
+
+    coverImage: images.img_veliyx,
+
+    screenshots: [
+      images.img_veliyx1,
+      images.img_veliyx2,
+      images.img_veliyx3,
+      images.img_veliyx4,
+      images.img_veliyx5,
+      images.img_veliyx6,
+      images.img_veliyx7,
+      images.img_veliyx8,
+      images.img_veliyx9,
+      images.img_veliyx10,
+      images.img_veliyx11,
+      images.img_veliyx12,
+      images.img_veliyx13,
+      images.img_veliyx14,
+    ],
+  },
+
+  {
+    id: "soulsync",
+    title: "SoulSync (React Native)",
+    role: "React Native Developer",
+    description:
+      "An offline-first personal analytics engine that transforms daily journaling into meaningful behavioral insights using on-device data processing and pattern detection.",
+
+    tags: [
+      "React Native",
+      "TypeScript",
+      "SQLite",
+      "Offline-First",
+      "Analytics",
+    ],
+
+    demo: { store: "", web: "", available: false },
+
+    coverColor: "bg-gradient-to-br from-indigo-500 to-blue-600",
+
+    coverImage: images.img_soulsync, // add asset
+
+    screenshots: [
+      images.img_soulsync1,
+      images.img_soulsync2,
+      images.img_soulsync3,
+      images.img_soulsync4,
+      images.img_soulsync5,
+      images.img_soulsync6,
+    ],
+
+    highlights: [
+      "Offline-first journaling with complete on-device data privacy",
+      "Mood tracking with time-based analytics and trend visualization",
+      "Insight engine generating behavioral patterns from user entries",
+      "Correlation analysis between mood, tags, and activity patterns",
+    ],
+
+    features: [
+      "Daily journaling with mood tagging and custom categories",
+      "Local database storage using optimized schema design",
+      "Analytics dashboard with mood trends and activity insights",
+      "Streak tracking and consistency monitoring",
+      "Tag-based analysis to identify positive and negative triggers",
+      "Time-based pattern detection (daily/weekly behavior)",
+      "Fully offline functionality with zero backend dependency",
+    ],
+
+    challenges: [
+      {
+        problem:
+          "Generating meaningful insights without relying on external APIs or AI services",
+        solution:
+          "Designed a rule-based analytics engine using statistical patterns and correlation logic computed entirely on-device",
+      },
+      {
+        problem:
+          "Efficiently querying and processing large amounts of local journal data",
+        solution:
+          "Implemented optimized SQLite queries with indexed fields and precomputed analytics for smooth performance",
+      },
+      {
+        problem:
+          "Transforming raw user data into understandable and actionable insights",
+        solution:
+          "Built an interpretation layer that converts analytics into human-readable summaries and behavioral observations",
+      },
+    ],
+    demo: {
+      store: {
+        ios: "https://apps.apple.com/us/app/soulsync-private-journal/id6780445597",
+        android:
+          "https://play.google.com/store/apps/details?id=com.soulsyncapp",
+      },
+    },
+
+    impact: [
+      { value: "100%", label: "Offline & Private" },
+      { value: "Real Insights", label: "Behavior Analysis" },
+      { value: "Zero API", label: "Fully Local Processing" },
+      { value: "Smart", label: "Data Interpretation" },
+    ],
+  },
+
+  {
     id: "catchndealz",
     title: "Catchndealz (React Native)",
     role: "React Native Developer",
@@ -65,6 +209,7 @@ export const projects = [
       { value: "High", label: "User Interaction" },
     ],
   },
+
   {
     id: "gridsun-monitor",
     title: "GridSun Monitor (React Native)",
@@ -136,6 +281,7 @@ export const projects = [
       { value: "Automated", label: "AMC Reminders" },
     ],
   },
+
   {
     id: "kyora-iq",
     title: "Kyora IQ (React Native)",
@@ -203,81 +349,6 @@ export const projects = [
       { value: "Realtime", label: "Chat System" },
       { value: "End-to-End", label: "Booking Flow" },
       { value: "Dynamic", label: "Theming System" },
-    ],
-  },
-
-  {
-    id: "soulsync",
-    title: "SoulSync (React Native)",
-    role: "React Native Developer",
-    description:
-      "An offline-first personal analytics engine that transforms daily journaling into meaningful behavioral insights using on-device data processing and pattern detection.",
-
-    tags: [
-      "React Native",
-      "TypeScript",
-      "SQLite",
-      "Offline-First",
-      "Analytics",
-    ],
-
-    demo: { store: "", web: "", available: false },
-
-    coverColor: "bg-gradient-to-br from-indigo-500 to-blue-600",
-
-    coverImage: images.img_soulsync, // add asset
-
-    screenshots: [
-      images.img_soulsync1,
-      images.img_soulsync2,
-      images.img_soulsync3,
-      images.img_soulsync4,
-      images.img_soulsync5,
-    ],
-
-    highlights: [
-      "Offline-first journaling with complete on-device data privacy",
-      "Mood tracking with time-based analytics and trend visualization",
-      "Insight engine generating behavioral patterns from user entries",
-      "Correlation analysis between mood, tags, and activity patterns",
-    ],
-
-    features: [
-      "Daily journaling with mood tagging and custom categories",
-      "Local database storage using optimized schema design",
-      "Analytics dashboard with mood trends and activity insights",
-      "Streak tracking and consistency monitoring",
-      "Tag-based analysis to identify positive and negative triggers",
-      "Time-based pattern detection (daily/weekly behavior)",
-      "Fully offline functionality with zero backend dependency",
-    ],
-
-    challenges: [
-      {
-        problem:
-          "Generating meaningful insights without relying on external APIs or AI services",
-        solution:
-          "Designed a rule-based analytics engine using statistical patterns and correlation logic computed entirely on-device",
-      },
-      {
-        problem:
-          "Efficiently querying and processing large amounts of local journal data",
-        solution:
-          "Implemented optimized SQLite queries with indexed fields and precomputed analytics for smooth performance",
-      },
-      {
-        problem:
-          "Transforming raw user data into understandable and actionable insights",
-        solution:
-          "Built an interpretation layer that converts analytics into human-readable summaries and behavioral observations",
-      },
-    ],
-
-    impact: [
-      { value: "100%", label: "Offline & Private" },
-      { value: "Real Insights", label: "Behavior Analysis" },
-      { value: "Zero API", label: "Fully Local Processing" },
-      { value: "Smart", label: "Data Interpretation" },
     ],
   },
 ];

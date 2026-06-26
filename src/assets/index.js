@@ -35,6 +35,30 @@ import img_gs3 from "./img_gs3.webp";
 import img_gs4 from "./img_gs4.webp";
 import img_gs5 from "./img_gs5.webp";
 
+import img_soulsync from "./img_soulsync.png";
+import img_soulsync1 from "./img_soulsync1.png";
+import img_soulsync2 from "./img_soulsync2.png";
+import img_soulsync3 from "./img_soulsync3.png";
+import img_soulsync4 from "./img_soulsync4.png";
+import img_soulsync5 from "./img_soulsync5.png";
+import img_soulsync6 from "./img_soulsync6.png";
+
+import img_veliyx from "./img_veliyx.png";
+import img_veliyx1 from "./img_veliyx1.png";
+import img_veliyx2 from "./img_veliyx2.png";
+import img_veliyx3 from "./img_veliyx3.png";
+import img_veliyx4 from "./img_veliyx4.png";
+import img_veliyx5 from "./img_veliyx5.png";
+import img_veliyx6 from "./img_veliyx6.png";
+import img_veliyx7 from "./img_veliyx7.png";
+import img_veliyx8 from "./img_veliyx8.png";
+import img_veliyx9 from "./img_veliyx9.png";
+import img_veliyx10 from "./img_veliyx10.png";
+import img_veliyx11 from "./img_veliyx11.png";
+import img_veliyx12 from "./img_veliyx12.png";
+import img_veliyx13 from "./img_veliyx13.png";
+import img_veliyx14 from "./img_veliyx14.png";
+
 export const icons = {
   ic_express,
   ic_firebase,
@@ -74,4 +98,28 @@ export const images = {
   img_gs3,
   img_gs4,
   img_gs5,
+
+  img_soulsync,
+  img_soulsync1,
+  img_soulsync2,
+  img_soulsync3,
+  img_soulsync4,
+  img_soulsync5,
+  img_soulsync6,
+
+  img_veliyx,
+  img_veliyx1,
+  img_veliyx2,
+  img_veliyx3,
+  img_veliyx4,
+  img_veliyx5,
+  img_veliyx6,
+  img_veliyx7,
+  img_veliyx8,
+  img_veliyx9,
+  img_veliyx10,
+  img_veliyx11,
+  img_veliyx12,
+  img_veliyx13,
+  img_veliyx14,
 };

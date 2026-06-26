@@ -38,6 +38,12 @@ export default function ProjectDetail() {
   // Convention: images[0] = cover (portrait/landscape), images[1..] = mobile screenshots
   const coverImage = project.coverImage || (project.images && project.images[0])
   const screenshots = project.screenshots || (project.images && project.images.length > 1 ? project.images.slice(1) : [])
+  const hasAnyLinks = Boolean(
+    project.demo?.web ||
+    project.demo?.store?.ios ||
+    project.demo?.store?.android ||
+    project.github
+  )
 
   return (
     <motion.div
@@ -295,10 +301,11 @@ export default function ProjectDetail() {
         )}
 
         {/* Demo & Links Section */}
-        <motion.div variants={itemVariants}>
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">Explore Project</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {project.demo?.web && (
+        {hasAnyLinks && (
+          <motion.div variants={itemVariants}>
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">Explore Project</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {project.demo?.web && (
               <motion.a
                 href={project.demo.web}
                 target="_blank"
@@ -374,13 +381,9 @@ export default function ProjectDetail() {
               </motion.a>
             )}
 
-            {!project.demo?.web && !project.demo?.store && !project.github && (
-              <div className="p-4 bg-slate-100 text-slate-600 rounded-lg">
-                <p className="text-sm">Demo not available for this project</p>
-              </div>
-            )}
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
+        )}
 
         {/* Impact Stats */}
         {project.impact && (
